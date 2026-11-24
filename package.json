@@ -1,0 +1,14 @@
+{
+  "name": "lanelog",
+  "version": "1.0.0",
+  "private": true,
+  "description": "레인로그 — 수영 연습 기록과 주간 복기 (모바일 우선 PWA)",
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "dev": "node scripts/serve.mjs",
+    "test": "node --check web/app.js && node --check web/sw.js && node scripts/test.mjs"
+  }
+}

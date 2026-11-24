@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, interactive-widget=resizes-content">
+<title>레인로그 · 나의 수영 기록</title>
+<meta name="description" content="수영 연습을 기록하고 한 주를 돌아보는 나만의 수영 노트. 휴대폰과 PC에서 함께 써요.">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#f2f6f4" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0e1a1a" media="(prefers-color-scheme: dark)">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="레인로그">
+<meta name="format-detection" content="telephone=no">
+<link rel="manifest" href="./manifest.webmanifest">
+<link rel="icon" href="./icons/icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="./icons/icon-192.png">
+<link rel="stylesheet" href="./style.css">
+<script type="module" src="./app.js"></script>
+</head>
+<body data-view="home">
+<nav class="nav" id="nav" aria-label="주 메뉴"></nav>
+<div class="page">
+  <header class="appbar">
+    <h1 id="title">레인로그</h1>
+    <button type="button" class="sync-btn" id="sync-btn" aria-label="동기화 상태"></button>
+  </header>
+  <main id="main" tabindex="-1"><noscript><p style="padding:24px">레인로그를 쓰려면 JavaScript를 켜 주세요.</p></noscript></main>
+</div>
+<button type="button" class="fab" id="fab" aria-label="연습 기록하기"></button>
+<dialog id="sheet" class="sheet" tabindex="-1"></dialog>
+<div id="snackbar" role="status" aria-live="polite"></div>
+</body>
+</html>
